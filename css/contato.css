@@ -1,0 +1,96 @@
+body{
+   color: white
+}
+
+main {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    gap: 40px;
+
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: deslizamento 1s ease-out forwards;
+    animation-delay: 0.3s; 
+}
+
+
+@keyframes deslizamento {
+    to {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+}
+  
+main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.destaque {
+    background: linear-gradient(to right, #b92efa, #e0a8fa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+main p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+  
+main a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+main a:hover {
+    text-decoration: underline;
+}
+  
+main i {
+    margin-right: 8px;
+    color: #b92efa;
+}
+  
+.textocontato {
+    flex: 1;
+}
+  
+form {
+    flex: 1;
+    background-color: #1a1a1a;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ffffff1a;
+}
+  
+input, textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+  
+button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #d98ffc, #b92efa);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+  
+button:hover {
+    background: linear-gradient(to right, #ebc8fc, #c759fa);
+}

@@ -1,0 +1,363 @@
+body{
+  color: white;
+}
+
+.destaque{
+  background: linear-gradient(to right, #b92efa, #e0a8fa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cont-inicio p{
+  color: #c0c0c0;
+  max-width: 600px;
+}
+
+.cont-inicio h1{
+  font-size: 60px;
+  opacity: 0;
+  transform: translateY(-20px); 
+  animation: deslizamento 1s ease-out forwards;
+  animation-delay: 0.3s; 
+}
+
+@keyframes deslizamento {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+.cont-inicio {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 0px;
+  text-align: center;    
+}
+
+.cont-dois{
+  margin-top:60px;
+  background-color: white;
+  padding: 80px 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  z-index: 0;
+    
+}
+
+.card{
+  background-color: #000000;
+  border-radius: 60px;
+  padding: 25px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: solid 8px #b92efa;
+  justify-content: center;
+  align-items: center;         
+  text-align: center;  
+  transition: transform 0.3s ease-out;
+}
+
+.card img{
+  width: 200px;
+}
+
+.card h1{
+  font-size: 20px;
+}
+
+.titulo-academico{
+  width: 100%;
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  z-index: 1;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card:hover{
+  transform: translateY(-15px);
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 32px;
+  margin: 10px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #a855f7, #f0abfc);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  max-width: 240px;
+  margin-bottom: 100px;
+}
+
+.circle p {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  background-color: transparent;
+}
+
+.circle:hover {
+  background: linear-gradient(135deg, #7e22ce, #d946ef); 
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.circle:hover p {
+  color: #fff;
+}
+
+.cont-dois hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #c0bdc1;
+  margin: 40px 0;
+}
+
+.slider {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: transparent;
+}
+
+.logos {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+  background-color: transparent;
+  width: calc(200%);
+}
+
+.logos img {
+  height: 60px;
+  margin: 0 40px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+  background-color: transparent;
+}
+
+.logos img:hover {
+  opacity: 1;
+  filter: none;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  margin: 0 20px;
+  display: inline-block;
+  vertical-align: middle;
+  filter: grayscale(100%);
+  background-color: transparent;
+}
+
+.tech-skills h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  font-weight: normal;
+}
+
+.tech-skills{
+  background-color: #050505;
+  box-shadow: 0 10px 15px -5px #1f1f1f9e;
+  margin-top: -50px; 
+  padding-bottom: 30px;
+}
+
+.soft-skills {
+  background-color: #111;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 150px auto 0 auto; 
+  color: white;
+  border-top: solid 8px #b92efa;
+  transition: transform 0.3s ease-out;
+}
+
+.soft-skills h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.soft-skills p {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+}
+
+.soft-skills .check {
+  color: #b92efa;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.soft-skills:hover{
+  transform: translateY(-15px);
+}
+
+.sobre {
+  display: flex;
+  align-items: stretch; 
+  justify-content: center; 
+  gap: 40px;
+  padding: 60px;
+  border-radius: 20px;
+  max-width: 1000px;
+  margin: 80px auto; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+}
+
+.julia {
+  flex: 1;
+  min-width: 280px;
+  max-width: 340px;
+  border-radius: 20px;
+  background: linear-gradient(195deg, #a855f7, #dfaff5);
+  padding: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-out;
+}
+
+.julia:hover{
+  transform: rotateZ(5deg);
+}
+
+.julia img {
+  width: 100%;
+  height: 95%; 
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+}
+
+.texto h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.experiencias {
+  width: 100vw;               
+  background-color: white;
+  padding: 60px 20px;         
+  box-sizing: border-box;
+}
+
+.experiencias .container {
+  max-width: 900px;           
+  margin: 0 auto;
+  padding: 40px 30px;
+  background-color: transparent;
+}
+
+.experiencias h1 {
+  font-size: 30px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  border-left: 5px solid black;
+  padding-left: 12px;
+  color: black;
+}
+
+.experiencias h3 {
+  color: #b92efa;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.experiencias p {
+  color: #cd71f8;
+  margin-bottom: 20px;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.experiencias ul {
+  padding-left: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.experiencias ul li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  color: black;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.experiencia-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.experiencia-cargo {
+  flex: 1;
+  max-width: 300px;
+  min-width: 240px;
+  background-color: transparent;
+}
+
+.experiencia-descricao {
+  flex: 2;
+  list-style-type: disc;
+  padding-left: 20px;
+  background-color: transparent;
+}
+
+
+
+
+

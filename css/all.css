@@ -1,0 +1,85 @@
+*{
+    background-color: black;
+}
+
+.montserrat-all {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 50px;
+}
+  
+.navlinks {
+    display: flex;
+    gap: 20px; 
+}
+  
+nav a {
+    text-decoration: none;
+    color: white;
+}
+  
+.curriculo {
+    background-color: #444; 
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+footer{
+    display: flex;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+  
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 200px;
+}
+  
+footer a {
+    color: white;
+    text-decoration: none;
+}
+  
+footer a:hover {
+    text-decoration: underline;
+}
+  
+footer i {
+    margin-right: 8px;
+    color: black; 
+    background: linear-gradient(#cc74f5, #b92efa);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#contatos{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.titulofooter{
+    font-weight: bold;
+}
+
+  
+  
