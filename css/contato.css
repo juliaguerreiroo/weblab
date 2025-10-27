@@ -94,3 +94,13 @@ button {
 button:hover {
     background: linear-gradient(to right, #ebc8fc, #c759fa);
 }
+
+#sucesso{
+    color:#c759fa;
+    background-color: #1a1a1a;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;;
+}

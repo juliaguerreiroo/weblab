@@ -75,3 +75,9 @@ main p{
     color: #c0c0c0;
 }
 
+.destaque{
+  background: linear-gradient(to right, #b92efa, #e0a8fa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
